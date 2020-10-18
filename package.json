@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/jaisharx/jwt-auth-express-api#readme",
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.9"
   },
   "devDependencies": {
