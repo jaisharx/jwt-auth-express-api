@@ -22,7 +22,7 @@ Hey, there! This repo is about a simple Node API using JWT and Mongoose (built o
 }
 ```
 
-It will return a response with JWT as follows 👇
+* It will return a response with JWT as follows 👇
 ```json
 {
     "id": "5f8be169fdfb3500179614bf",
@@ -32,8 +32,6 @@ It will return a response with JWT as follows 👇
 }
 ```
 
-You can use this JWT to make requests to private/protected routes by attaching this token with the header `auth-token` in the request.
-
-For example: Make a request to **`/api/users`** with the `auth-token` header as the JWT token you recived from the login endpoint.
+You can use this JWT to make requests to private/protected routes by attaching this token with the header `auth-token` in the request. For example: Make a request to **`/api/users`** with the `auth-token` header as the JWT token you received from the login endpoint.
 
 #### NOTE: I used this awesome tutorial by dev ed from Youtube. Check it out [here](https://www.youtube.com/watch?v=2jqok-WgelI) ❤
