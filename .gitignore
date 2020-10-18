@@ -1,0 +1,8 @@
+# js packages
+node_modules
+
+# there could be issues on herkou with lock file
+package-lock.json
+
+# secrets
+.env
