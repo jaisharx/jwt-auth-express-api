@@ -4,8 +4,10 @@ const User = require('../model/User');
 
 router.get('/', verify, (req, res) => {
     User.findById(req.user.id, (err, user) => {
-        console.log(user);
-        res.send(user);
+        res.send({
+            name: user.name,
+            email: user.email
+        });
     });
 });
 

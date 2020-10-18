@@ -54,7 +54,7 @@ router.post('/login', async (req, res) => {
     };
 
     // using jwt for later sessions
-    const token = jwt.sign(dataToSend, process.env.JWT_TOKEN);
+    const token = jwt.sign(dataToSend, process.env.JWT_SECRET);
 
     // attaching jwt to the header
     res.header('auth-token', token);
@@ -64,5 +64,6 @@ router.post('/login', async (req, res) => {
         jwt_token: token,
     });
 });
+
 
 module.exports = router;
